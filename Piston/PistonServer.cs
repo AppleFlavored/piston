@@ -5,15 +5,18 @@ namespace Piston;
 
 public class PistonServer
 {
-    private readonly ConnectionManager _connectionManager;
+    private readonly IPAddress _address;
+    private readonly ushort _port;
     
-    public PistonServer(IPAddress address, int port = 25565)
+    public PistonServer(IPAddress address, ushort port)
     {
-        _connectionManager = new ConnectionManager(address, port);
+        _address = address;
+        _port = port;
     }
-    
+
     public void Start()
     {
-        _connectionManager.Start();
+        var server = new SocketServer(_address, _port);
+        server.Listen();
     }
 }
