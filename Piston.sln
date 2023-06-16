@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piston", "Piston\Piston.csproj", "{01085E83-EF66-4957-9D2A-9FE78D7C27FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piston", "Piston\Piston.csproj", "{DB92585C-B2E1-4AC2-8517-3CF1D72FCFDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piston.Protocol", "Piston.Protocol\Piston.Protocol.csproj", "{747811BA-66AF-49E4-8144-A40E9A978F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piston.Protocol.Generator", "Piston.Protocol.Generator\Piston.Protocol.Generator.csproj", "{9A9A7A88-14E3-4FFB-8E70-D13508660A90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01085E83-EF66-4957-9D2A-9FE78D7C27FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01085E83-EF66-4957-9D2A-9FE78D7C27FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01085E83-EF66-4957-9D2A-9FE78D7C27FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01085E83-EF66-4957-9D2A-9FE78D7C27FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB92585C-B2E1-4AC2-8517-3CF1D72FCFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB92585C-B2E1-4AC2-8517-3CF1D72FCFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB92585C-B2E1-4AC2-8517-3CF1D72FCFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB92585C-B2E1-4AC2-8517-3CF1D72FCFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747811BA-66AF-49E4-8144-A40E9A978F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747811BA-66AF-49E4-8144-A40E9A978F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747811BA-66AF-49E4-8144-A40E9A978F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747811BA-66AF-49E4-8144-A40E9A978F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9A7A88-14E3-4FFB-8E70-D13508660A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9A7A88-14E3-4FFB-8E70-D13508660A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9A7A88-14E3-4FFB-8E70-D13508660A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9A7A88-14E3-4FFB-8E70-D13508660A90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

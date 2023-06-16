@@ -1,0 +1,52 @@
+{
+  "protocolVersion": 762,
+  "packets": [
+    {
+      "id": 0,
+      "name": "Handshake",
+      "state": "handshaking",
+      "boundTo": "server",
+      "fields": {
+        "protocolVersion": "varint",
+        "serverAddress": "string",
+        "serverPort": "ushort",
+        "nextState": "varint"
+      }
+    },
+    {
+      "id": 0,
+      "name": "StatusResponse",
+      "state": "status",
+      "boundTo": "client",
+      "fields": {
+        "response": "string"
+      }
+    },
+    {
+      "id": 1,
+      "name": "PingResponse",
+      "state": "status",
+      "boundTo": "client",
+      "fields": {
+        "payload": "long"
+      }
+    },
+    {
+      "id": 0,
+      "name": "StatusRequest",
+      "state": "status",
+      "boundTo": "server",
+      "fields": {}
+    },
+    {
+      "id": 1,
+      "name": "PingRequest",
+      "state": "status",
+      "boundTo": "server",
+      "fields": {
+        "payload": "long"
+      }
+    }
+  ]
+}
+
