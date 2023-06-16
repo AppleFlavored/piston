@@ -1,0 +1,10 @@
+[*]
+indent_style = space
+
+[*.cs]
+indent_size = 4
+tab_width = 4
+
+[*.json]
+indent_size = tab
+tab_width = 2
