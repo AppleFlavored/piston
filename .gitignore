@@ -1,4 +1,7 @@
+# IDE-specific files
 .idea/
+.vs/
 
+# Build directories
 bin/
 obj/
