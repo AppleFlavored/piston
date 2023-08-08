@@ -15,7 +15,7 @@ public class PistonServer
     public PistonServer(PistonServerOptions options)
     {
         _options = options;
-        _socketServer = new(this);
+        _socketServer = new SocketListener(this);
     }
 
     public void Start()
