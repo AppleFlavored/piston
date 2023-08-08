@@ -1,7 +1,8 @@
 using System.Text.Json;
 using Microsoft.CodeAnalysis;
+using Piston.Generators.Entities;
 
-namespace Piston.Protocol.Generator;
+namespace Piston.Generators;
 
 [Generator]
 public class PacketStructGenerator : ISourceGenerator

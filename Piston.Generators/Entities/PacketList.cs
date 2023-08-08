@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Piston.Protocol.Generator;
+namespace Piston.Generators.Entities;
 
 public record PacketList
 {

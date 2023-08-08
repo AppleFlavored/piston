@@ -1,4 +1,4 @@
-namespace Piston.Protocol.Generator;
+namespace Piston.Generators.Entities;
 
 public record PacketDefinition
 {
