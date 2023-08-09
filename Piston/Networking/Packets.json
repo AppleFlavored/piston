@@ -4,7 +4,6 @@
     {
       "id": 0,
       "name": "Handshake",
-      "boundTo": "server",
       "fields": {
         "protocolVersion": "varint",
         "serverAddress": "string",
@@ -17,7 +16,6 @@
     {
       "id": 0,
       "name": "StatusResponse",
-      "boundTo": "client",
       "fields": {
         "response": "string"
       }
@@ -25,7 +23,6 @@
     {
       "id": 1,
       "name": "PingResponse",
-      "boundTo": "client",
       "fields": {
         "payload": "long"
       }
@@ -33,13 +30,11 @@
     {
       "id": 0,
       "name": "StatusRequest",
-      "boundTo": "server",
       "fields": {}
     },
     {
       "id": 1,
       "name": "PingRequest",
-      "boundTo": "server",
       "fields": {
         "payload": "long"
       }
