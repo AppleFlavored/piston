@@ -16,7 +16,6 @@ Log.Logger = new LoggerConfiguration()
 #endif
     .CreateLogger();
 
-// TODO: Load server options from a configuration file.
 var serverOptions = new PistonServerOptions { Port = Convert.ToUInt16(serverConfig["port"]) };
 var server = new PistonServer(serverOptions);
 
