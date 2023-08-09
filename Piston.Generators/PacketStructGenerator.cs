@@ -5,6 +5,11 @@ using Piston.Generators.Entities;
 
 namespace Piston.Generators;
 
+/// <summary>
+/// This class defines a C# source generator that reads packet definitions from a JSON file named "Packets.json". 
+/// It then generates C# source files containing struct definitions for these packets, 
+/// along with methods Write() and Read() methods.
+/// </summary>
 [Generator]
 public class PacketStructGenerator : ISourceGenerator
 {
@@ -21,6 +26,7 @@ public class PacketStructGenerator : ISourceGenerator
     public void Initialize(GeneratorInitializationContext context)
     {
     }
+
 
     public void Execute(GeneratorExecutionContext context)
     {
@@ -45,6 +51,7 @@ public class PacketStructGenerator : ISourceGenerator
             context.ReportDiagnostic(Diagnostic.Create(JsonParsingError, Location.None, Array.Empty<object>()));
             return;
         }
+
 
         var allPackets = packetList.HandshakePackets!
             .Union(packetList.StatusPackets!)
