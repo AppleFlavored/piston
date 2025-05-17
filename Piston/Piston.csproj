@@ -2,23 +2,30 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <TargetFramework>net8.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
-  <ItemGroup>
-    <AdditionalFiles Include="Networking\Packets.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Piston.Generators\Piston.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Serilog" Version="3.0.1" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="SharpNBT" Version="1.3.1" />
+    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="Tomlyn" Version="0.17.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\DefaultConfig.toml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Networking\RegistryData.json" />
+  </ItemGroup>
+
+
+
 
 </Project>
